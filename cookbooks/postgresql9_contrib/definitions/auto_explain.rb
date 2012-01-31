@@ -7,7 +7,7 @@ define :postgresql9_autoexplain do
     library_name "auto_explain"
   end
   
-  include_recipe "postgresql9_contrib::ext_autoexplain"
+  # include_recipe "postgresql9_contrib::ext_autoexplain"
 
 end
 
