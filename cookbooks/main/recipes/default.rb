@@ -35,7 +35,7 @@
 
 #uncomment to run the exim::auth recipe
 #require_recipe "exim::auth"
- require_recipe "mongodb"
+# require_recipe "mongodb"
 
 #uncomment to run the resque recipe
 #require_recipe "resque"
@@ -77,8 +77,8 @@
 #require_recipe "newrelic_server_monitoring"
 
 #enable contrib modules for a given Postgresql9 database
-#if ['solo','db_master', 'db_slave'].include?(node[:instance_role])
-  # postgresql9_autoexplain "dbname"
+if ['solo','db_master', 'db_slave'].include?(node[:instance_role])
+  postgresql9_autoexplain "todo"
   # postgresql9_chkpass "dbname"
   # postgresql9_citext "dbname"
   # postgresql9_cube "dbname"
@@ -104,4 +104,4 @@
   # postgresql9_pg_buffercache "postgres"
   # postgresql9_pg_freespacemap "postgres"
   
-#end
+end

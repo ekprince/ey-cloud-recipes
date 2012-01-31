@@ -15,6 +15,7 @@ Available Extensions
 At the moment the following extensions are available. See http://www.postgresql.org/docs/9.0/static/contrib.html for more information.
 
 ##auto_explain
+###supported versions: 9.0, 9.1
 This extension provides a means for logging execution plans of slow statements automatically, without having to run EXPLAIN by hand. 
 This is especially helpful for tracking down un-optimized queries in large applications. 
 WARNING: Enabling this extension will restart your Postgres service. 
